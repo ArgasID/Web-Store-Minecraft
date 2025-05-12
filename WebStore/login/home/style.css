@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 102%;
+  background-color: #222;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 102%;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.profile {
+  top: 2px;
+  position: relative;
+  cursor: pointer;
+  width: 90px;
+}
+
+@media (max-width: 400px) {
+  .dropdown {
+    transform: translateX(-20px);
+  }
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: #333;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+  text-align: right;
+  min-width: 150px;
+}
+
+.dropdown p {
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dropdown button {
+  margin-top: 10px;
+  width: 100%;
+  background: #c0392b;
+  border: none;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 0;
+}
+
+.container {
+  padding: 40px;
+  width: 90%;
+  max-width: 800px;
+  width: 60vw;
+  margin: auto;
+  text-align: center;
+}
+
+.rank-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rank-card {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.rank-card img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.rank-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.rank-card .price {
+  color: #f1c40f;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.rank-card button {
+  background-color: #4caf50;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.info-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #444;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  position: relative;
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 300px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+.popup-content p {
+  margin: 0;
+}
+
+@media (max-width: 400px) {
+  .popup-content {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+.close-popup {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .rank-list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

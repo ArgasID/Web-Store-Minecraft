@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.popup {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  width: 60vw;
+  min-width: 280px;
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.popup h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.popup input,
+.popup select,
+.popup button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.popup input,
+.popup select {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.popup button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.popup button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: #ff4d4d;
+  font-size: 0.9em;
+  min-height: 18px;
+}
+
+#skin-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 15px auto 0;
+  display: none;
+}
+
+/* RESPONSIVE SCALING */
+
+@media (min-width: 480px) {
+  .popup {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup {
+    max-width: 500px;
+    padding: 30px;
+  }
+
+  .popup h2 {
+    font-size: 1.8em;
+  }
+
+  .popup input,
+  .popup select,
+  .popup button {
+    font-size: 1.1em;
+    padding: 14px;
+  }
+
+  #skin-preview {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .popup {
+    max-width: 600px;
+    padding: 35px;
+  }
+
+  .popup h2 {
+    font-size: 2em;
+  }
+
+  .popup input,
+  .popup select,
+  .popup button {
+    font-size: 1.2em;
+    padding: 16px;
+  }
+
+  #skin-preview {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .popup {
+    max-width: 700px;
+    padding: 40px;
+  }
+
+  .popup h2 {
+    font-size: 2.2em;
+  }
+
+  .popup input,
+  .popup select,
+  .popup button {
+    font-size: 1.3em;
+    padding: 18px;
+  }
+
+  #skin-preview {
+    width: 160px;
+    height: 160px;
+  }
+}

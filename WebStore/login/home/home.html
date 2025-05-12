@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axolotl Store - Pembelian Rank</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="logo">Axolotl Store</div>
+    <div class="nav-menu" id="nav-menu">
+      <a href="home.html">Home</a>
+      <a href="rank.html">Beli Rank</a>
+      <a href="about.html">Tentang Kami</a>
+    </div>
+    <div class="profile" id="profile-dropdown" style="padding-right: 15px;">
+      <img id="profile-pic" src="" alt="Profile" />
+      <div class="dropdown" id="dropdown-menu">
+        <p id="profile-username"></p>
+        <hr />
+        <button id="logout-btn">Logout</button>
+      </div>
+    </div>
+  </nav>
+  <p id="result-message" style="text-align:center; margin-top: 20px;"></p>
+  <p id="display-name" style="display: none;"></p>
+  <div class="container">
+    <h2>Selamat datang, <span id="display-name"></span></h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

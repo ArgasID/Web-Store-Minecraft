@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axolotl Store - Pembelian Rank</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="logo">Axolotl Store</div>
+    <div class="nav-menu" id="nav-menu">
+      <a href="/home/home.html">Home</a>
+      <a href="#">Beli Rank</a>
+      <a href="/home/about.html">Tentang Kami</a>
+    </div>
+    <div class="profile" id="profile-dropdown">
+      <img id="profile-pic" src="" alt="Profile" />
+      <div class="dropdown" id="dropdown-menu">
+        <p id="profile-username"></p>
+        <hr />
+        <button id="logout-btn">Logout</button>
+      </div>
+    </div>
+  </nav>
+  <div class="judul">
+       <h2>Rank</h2>
+  </div>
+  <div class="container">
+    <div class="rank-list">
+      <div class="rank-card" data-rank="vip">
+        <div class="info-button" data-info="Prefix VIP, akses warp VIP, tag eksklusif di chat">i</div>
+        <img src="../asset/tes.jpg" alt="VIP" />
+        <h3>VIP</h3>
+        <p class="price">Rp10.000</p>
+        <button class="buy-rank-btn">Beli VIP</button>
+      </div>
+      <div class="rank-card" data-rank="elite">
+        <div class="info-button" data-info="Semua fitur VIP, nickname custom, kit eksklusif harian">i</div>
+        <img src="../asset/tes.jpg" alt="Elite" />
+        <h3>Elite</h3>
+        <p class="price">Rp25.000</p>
+        <button class="buy-rank-btn">Beli Elite</button>
+      </div>
+      <div class="rank-card" data-rank="supreme">
+        <div class="info-button" data-info="Semua fitur Elite, fly di overworld, warp pribadi">i</div>
+        <img src="../asset/tes.jpg" alt="Supreme" />
+        <h3>Supreme</h3>
+        <p class="price">Rp50.000</p>
+        <button class="buy-rank-btn">Beli Supreme</button>
+      </div>
+    </div>
+    <p id="result-message"></p>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close-popup" id="close-popup">&times;</span>
+      <p id="popup-text"></p>
+    </div>
+  </div>
+  <p id="result-message" style="text-align:center; margin-top: 20px;"></p>
+  <p id="display-name" style="display: none;"></p>
+  <script src="script.js"></script>
+</body>
+</html>
